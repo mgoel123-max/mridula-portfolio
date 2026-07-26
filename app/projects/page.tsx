@@ -12,7 +12,7 @@ export default function Projects() {
         </h1>
 
         <p className="mt-8 text-xl text-gray-600">
-          A selection of analytics,
+          A selection of technology, analytics,
           AI and strategy projects.
         </p>
 

@@ -30,7 +30,7 @@ export default function Logo() {
         </h1>
 
         <p className="text-sm text-gray-500">
-          Program Manager
+          
         </p>
 
       </div>

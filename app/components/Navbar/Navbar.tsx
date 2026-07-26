@@ -29,26 +29,20 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 z-50 w-full px-8 py-5">
       <nav
         className="
-          mx-auto
-          max-w-7xl
-          rounded-full
-          border
-          border-pink-100
-          bg-white/75
-          backdrop-blur-xl
-          shadow-xl
-          px-8
-          py-4
-          flex
-          items-center
-          justify-between
-        "
+  mx-auto
+  max-w-7xl
+  px-8
+  py-4
+  flex
+  items-center
+  justify-start
+"
       >
         {/* Logo */}
         <Logo />
 
         {/* Navigation */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-10 ml-auto">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -82,25 +76,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Resume Button */}
-        <Link
-          href="/resume"
-          className="
-            rounded-full
-            bg-[#D63384]
-            px-6
-            py-3
-            text-white
-            font-semibold
-            shadow-lg
-            transition-all
-            duration-300
-            hover:scale-105
-            hover:bg-[#B5175A]
-          "
-        >
-          Resume ↗
-        </Link>
+
       </nav>
     </header>
   );

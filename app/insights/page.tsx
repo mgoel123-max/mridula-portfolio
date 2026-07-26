@@ -12,7 +12,7 @@ export default function Insights() {
           {/* Page Heading */}
 
           <h1 className="text-6xl font-bold text-[#222]">
-            Insights
+            
           </h1>
 
           <p className="mt-8 text-xl text-gray-600 max-w-3xl leading-9">
