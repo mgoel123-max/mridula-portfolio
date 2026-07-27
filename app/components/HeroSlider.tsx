@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 
+
+
 import {
   TrendingUp,
   BriefcaseBusiness,
   Users,
   ShoppingBag,
   BarChart3,
+  MessageSquare,
 } from "lucide-react";
 
 const slides = [
@@ -15,13 +18,13 @@ const slides = [
     id: 1,
     nav: "Introduction",
     title: "Mridula Goel",
-    subtitle: "PROGRAM MANAGER • CUSTOMER-FOCUSED • ANALYTICS & STRATEGY",
+    subtitle: "",
     description:
-      "Helping organizations transform complex business challenges into measurable growth through strategy, analytics and customer insights.",
+      "",
   },
 {
   id: 2,
-  nav: "What I Bring",
+  nav: "Expertise",
   title: "What I Bring",
   cards: [
     {
@@ -54,13 +57,19 @@ const slides = [
         "Transforming insights into measurable business impact through analytics and experimentation.",
       icon: BarChart3,
     },
+    {
+  title: "Executive Communication",
+  description:
+    "Translating complex analyses into clear, compelling narratives that enable confident executive decision-making.",
+  icon: MessageSquare,
+},
   ],
 },
   {
     id: 3,
-    nav: "Business Impact",
+    nav: "Impact",
     title: "Data → Decisions → Growth",
-    subtitle: "BUSINESS IMPACT",
+    subtitle: "",
     description:
       "Helping organizations make smarter decisions through customer insights, analytics, experimentation and strategic program leadership.",
   },
@@ -135,7 +144,7 @@ export default function HeroSlider() {
   <div className="w-full max-w-7xl animate-fade">
 
     <p className="uppercase tracking-[0.35em] text-[#D63384] font-semibold text-center mb-4">
-      MY EXPERTISE
+      
     </p>
 
    <p className="uppercase tracking-[0.35em] text-[#D63384] font-semibold text-center mb-16">
@@ -253,7 +262,7 @@ export default function HeroSlider() {
       <div
         className="
           absolute
-          bottom-14
+          bottom-6
           left-1/2
           -translate-x-1/2
           flex

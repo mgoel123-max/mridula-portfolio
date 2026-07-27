@@ -14,7 +14,7 @@ export default function Contact() {
           </span>
 
           <h1 className="mt-6 text-6xl font-bold text-[#222]">
-            Let's Connect
+            
           </h1>
 
           <p className="mt-8 max-w-2xl text-xl leading-9 text-gray-600">
@@ -30,12 +30,12 @@ export default function Contact() {
                 Email
               </p>
 
-              <a
-                href="mailto:mridula.goel@utexas.edu"
-                className="mt-2 inline-block text-2xl font-medium text-[#222] hover:text-[#D63384] transition"
-              >
-                mridula.goel@utexas.edu
-              </a>
+           <a
+  href="mailto:mridula.goel@utexas.edu"
+  className="mt-8 inline-block max-w-2xl text-xl leading-9 text-gray-600 transition-colors duration-300 hover:text-[#D63384]"
+>
+  mridula.goel@utexas.edu
+</a>
             </div>
 
             <div>
@@ -43,18 +43,19 @@ export default function Contact() {
                 LinkedIn
               </p>
 
-              <a
-                href="https://linkedin.com/in/mridula-goel"
-                target="_blank"
-                className="mt-2 inline-block text-2xl font-medium text-[#222] hover:text-[#D63384] transition"
-              >
-                linkedin.com/in/mridula-goel
-              </a>
+            <a
+  href="https://linkedin.com/in/mridula-goel"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-8 inline-block max-w-2xl text-xl leading-9 text-gray-600 transition-colors duration-300 hover:text-[#D63384]"
+>
+  linkedin.com/in/mridula-goel
+</a>
             </div>
 
             <div>
               <p className="text-sm uppercase tracking-widest text-[#D63384]">
-                GitHub
+                
               </p>
 
               <a
@@ -62,7 +63,7 @@ export default function Contact() {
                 target="_blank"
                 className="mt-2 inline-block text-2xl font-medium text-[#222] hover:text-[#D63384] transition"
               >
-                github.com/yourusername
+                
               </a>
             </div>
 
