@@ -90,27 +90,27 @@ export default function HeroSlider() {
   }, [paused]);
 
   return (
-   <section
+ <section
   className="
     relative
-    min-h-screen
     bg-white
-    overflow-hidden
+    min-h-screen
     flex
-    items-center
+    flex-col
     justify-center
+    overflow-hidden
     pt-24
     md:pt-28
-    lg:pt-20
-    pb-28
+    pb-32
   "
   onMouseEnter={() => setPaused(true)}
   onMouseLeave={() => setPaused(false)}
 >
       {/* Slides */}
 
-      <div
+  <div
   className="
+    flex-1
     w-full
     max-w-7xl
     mx-auto
@@ -145,7 +145,7 @@ export default function HeroSlider() {
                   tracking-[0.35em]
                   font-semibold
                   text-[#D63384]
-                  mb-8
+                  mb-4
                   
                 "
               >
@@ -158,11 +158,10 @@ export default function HeroSlider() {
     tracking-tight
     text-gray-900
     leading-tight
-    text-5xl
-    sm:text-6xl
-    md:text-7xl
-    lg:text-8xl
-    xl:text-9xl
+  text-5xl
+sm:text-6xl
+md:text-7xl
+lg:text-8xl
   "
 >
               Mridula Goel
@@ -170,7 +169,7 @@ export default function HeroSlider() {
 
             <p
   className="
-    mt-8
+    mt-6
     max-w-2xl
     mx-auto
     text-base
@@ -301,8 +300,12 @@ export default function HeroSlider() {
         {/* ---------------- BUSINESS IMPACT ---------------- */}
 
         {currentSlide === 2 && (
-          <div
+  <div
   className="
+    flex
+    flex-col
+    items-center
+    justify-center
     text-center
     max-w-4xl
     mx-auto
