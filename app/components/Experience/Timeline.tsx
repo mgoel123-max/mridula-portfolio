@@ -3,23 +3,24 @@ import TimelineCard from "./TimelineCard";
 
 export default function Timeline() {
   return (
-    <div className="relative">
+    <section className="relative max-w-6xl mx-auto">
 
-      {/* Vertical Line */}
+      {/* Desktop vertical line */}
+      <div className="hidden lg:block absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-pink-200" />
 
-      <div className="absolute left-6 top-0 h-full w-[2px] bg-pink-200" />
+      {/* Mobile vertical line */}
+      <div className="lg:hidden absolute left-4 top-0 h-full w-[2px] bg-pink-200" />
 
-      <div className="space-y-20">
-
+      <div className="space-y-14 md:space-y-20">
         {experiences.map((experience, index) => (
           <TimelineCard
             key={index}
             experience={experience}
+            index={index}
           />
         ))}
-
       </div>
 
-    </div>
+    </section>
   );
 }

@@ -5,19 +5,30 @@ export default function Projects() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-[#FFF8FA] pt-40 px-10">
+      <main className="min-h-screen bg-white pt-28 md:pt-36 lg:pt-40 pb-20">
 
-        <h1 className="text-6xl font-bold">
-          Projects
-        </h1>
+        <section className="max-w-7xl mx-auto px-5 md:px-8 lg:px-10">
 
-        <p className="mt-8 text-xl text-gray-600">
-          A selection of technology, analytics,
-          AI and strategy projects.
-        </p>
+          <span className="uppercase tracking-[0.3em] text-[#D63384] font-semibold text-sm md:text-base">
+            PROJECTS
+          </span>
+
+          <h1 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            Projects
+          </h1>
+
+          <p className="mt-6 max-w-3xl text-base md:text-lg text-gray-600 leading-8">
+            A collection of analytics, AI, data science, consulting,
+            program management, and business strategy projects that
+            demonstrate how I transform data into measurable business
+            outcomes.
+          </p>
+
+          {/* Project cards will go here */}
+
+        </section>
 
       </main>
-
     </>
   );
 }

@@ -1,152 +1,95 @@
+import Navbar from "../components/Navbar/Navbar";
 import Image from "next/image";
-
-const topics = [
-  "Business Strategy",
-  "Marketing",
-  "Economics",
-  "Consumer Psychology",
-  "Technology & AI",
-  "Retail",
-  "Leadership",
-  "Food",
-  "Travel",
-  "Lifestyle",
-];
 
 export default function Insights() {
   return (
-    <section
-      id="insights"
-      className="bg-[#FFF8FA] py-24 px-8"
-    >
-      <div className="max-w-7xl mx-auto">
+    <>
+      <Navbar />
 
-        {/* Section Heading */}
+      <main className="bg-white min-h-screen pt-28 md:pt-36 lg:pt-40 pb-20">
+        <section className="max-w-7xl mx-auto px-5 md:px-8 lg:px-10">
 
-        <div className="mb-20 text-center">
+          {/* Page Heading */}
 
-          <p className="uppercase tracking-[0.35em] text-[#D63384] font-semibold">
-            Insights
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+          </h1>
+
+          <p className="mt-6 text-base md:text-lg text-gray-600 max-w-3xl leading-8">
           </p>
 
-          <h2 className="text-6xl font-bold text-[#222] mt-5">
-            The Curious Mind
-          </h2>
+          {/* Featured Blog */}
 
-          <p className="text-xl text-gray-600 mt-8 max-w-3xl mx-auto leading-9">
-            Exploring the intersection of business, marketing,
-            economics, technology, food, travel and everyday life.
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mt-16 md:mt-20 items-center">
 
-        </div>
+            {/* Content */}
 
-        {/* Featured Blog */}
+            <div className="lg:col-span-5 max-w-xl">
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+              <span className="uppercase tracking-[0.3em] text-[#D63384] font-semibold text-sm">
+                Featured Article
+              </span>
 
-          {/* Image */}
+              <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                The Curious Mind
+              </h2>
 
-          <div>
+              <p className="mt-6 text-base md:text-lg text-gray-600 leading-8">
+                Why does technology reshape consumer behaviour?
+                Why do economies influence innovation?
+                Why does culture affect marketing?
+              </p>
 
-            <Image
-              src="/images/blog-cover.png"
-              alt="The Curious Mind"
-              width={900}
-              height={700}
-              className="rounded-3xl shadow-2xl object-cover"
-            />
+              <p className="mt-6 text-base md:text-lg text-gray-600 leading-8">
+                Through this blog, I explore the fascinating
+                connections between business strategy,
+                marketing, economics, technology,
+                food, travel and everyday life.
+              </p>
 
-          </div>
-
-          {/* Content */}
-
-          <div>
-
-            <span className="bg-pink-100 text-[#D63384] px-4 py-2 rounded-full text-sm font-semibold">
-              Featured Article
-            </span>
-
-            <h3 className="text-5xl font-bold mt-8 text-[#222]">
-              How Curiosity Connects Everything
-            </h3>
-
-            <p className="mt-8 text-lg text-gray-600 leading-9">
-
-              One of the most fascinating things about the world is that
-              nothing exists in isolation.
-
-            </p>
-
-            <p className="mt-6 text-lg text-gray-600 leading-9">
-
-              A new technology changes consumer behaviour.
-              Consumer behaviour changes marketing.
-              Marketing changes retail.
-              Retail transforms supply chains.
-              Supply chains influence economies.
-
-            </p>
-
-            <p className="mt-6 text-lg text-gray-600 leading-9">
-
-              Every decision creates another ripple.
-
-              Through this space I explore those connections—
-              from consulting, strategy and analytics to food,
-              travel, leadership and the ideas that shape the
-              future of business.
-
-            </p>
-
-            <button
-              className="mt-10 bg-[#D63384] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#B5175A] transition duration-300"
-            >
-              Read Article →
-            </button>
-
-          </div>
-
-        </div>
-
-        {/* Topics */}
-
-        <div className="mt-24">
-
-          <h3 className="text-3xl font-bold text-[#222] mb-10">
-            Topics I'll Write About
-          </h3>
-
-          <div className="flex flex-wrap gap-4">
-
-            {topics.map((topic) => (
-
-              <div
-                key={topic}
+              <button
                 className="
-                  px-6
-                  py-3
+                  mt-10
                   rounded-full
-                  bg-white
-                  border
-                  border-pink-100
+                  bg-[#D63384]
+                  px-7
+                  py-3.5
+                  text-white
+                  font-semibold
                   shadow-md
-                  hover:bg-[#D63384]
-                  hover:text-white
-                  transition
+                  transition-all
                   duration-300
-                  cursor-pointer
+                  hover:bg-[#B5175A]
+                  hover:shadow-lg
                 "
               >
-                {topic}
+                Read Article →
+              </button>
+
+            </div>
+
+            {/* Image */}
+
+            <div className="lg:col-span-7 flex justify-center lg:justify-end">
+
+              <div className="bg-white rounded-3xl p-4 md:p-6 max-w-2xl w-full">
+
+                <Image
+                  src="/images/blog_page_image.png"
+                  alt="The Curious Mind"
+                  width={1300}
+                  height={1000}
+                  priority
+                  className="w-full h-auto rounded-3xl shadow-xl"
+                />
+
               </div>
 
-            ))}
+            </div>
 
           </div>
 
-        </div>
-
-      </div>
-    </section>
+        </section>
+      </main>
+    </>
   );
 }

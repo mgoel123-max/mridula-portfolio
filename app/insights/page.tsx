@@ -6,7 +6,7 @@ export default function Insights() {
     <>
       <Navbar />
 
-      <main className="bg-[#FFF8FA] min-h-screen pt-40">
+      <main className="bg-white min-h-screen pt-28 md:pt-36 lg:pt-40 pb-20">
         <section className="max-w-7xl mx-auto px-8">
 
           {/* Page Heading */}
@@ -72,7 +72,7 @@ export default function Insights() {
 
  <div className="lg:col-span-7 flex justify-end">
 
-  <div className="bg-[#FFF8FA] rounded-3xl p-6 max-w-2xl">
+ <div className="bg-white rounded-3xl p-4 md:p-6 max-w-2xl w-full">
 
       <Image
         src="/images/blog_page_image.png"

@@ -71,7 +71,7 @@ const slides = [
     title: "Data → Decisions → Growth",
     subtitle: "",
     description:
-      "Helping organizations make smarter decisions through customer insights, analytics, experimentation and strategic program leadership.",
+      "",
   },
 ];
 
@@ -90,48 +90,96 @@ export default function HeroSlider() {
   }, [paused]);
 
   return (
-    <section
-      className="relative h-screen bg-[#FFF7FA] overflow-hidden"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
+   <section
+  className="
+    relative
+    min-h-screen
+    bg-white
+    overflow-hidden
+    flex
+    items-center
+    justify-center
+    pt-24
+    md:pt-28
+    lg:pt-20
+    pb-28
+  "
+  onMouseEnter={() => setPaused(true)}
+  onMouseLeave={() => setPaused(false)}
+>
       {/* Slides */}
 
-      <div className="flex h-full items-center justify-center px-8">
+      <div
+  className="
+    w-full
+    max-w-7xl
+    mx-auto
+    px-6
+    md:px-10
+    lg:px-16
+    flex
+    items-center
+    justify-center
+  "
+>
 
         {/* ---------------- HOME ---------------- */}
 
         {currentSlide === 0 && (
-          <div className="text-center max-w-4xl animate-fade">
+       <div
+  className="
+    text-center
+    max-w-5xl
+    mx-auto
+    animate-fade
+  "
+>
 
             <p
                 className="
                   uppercase
-                  text-[clamp(0.75rem,1.2vw,1rem)]
+                  text-5xl
+                  sm:text-6xl
+                  md:text-7xl
+                  lg:text-8xl
                   tracking-[0.35em]
                   font-semibold
                   text-[#D63384]
                   mb-8
-                  whitespace-nowrap
+                  
                 "
               >
                 {slides[0].subtitle}
               </p>
 
-          <h1
-              className="
-                text-[clamp(4rem,8vw,7rem)]
-                font-bold
-                tracking-tight
-                text-[#222]
-                leading-none
-                whitespace-nowrap
-              "
-            >
+     <h1
+  className="
+    font-bold
+    tracking-tight
+    text-gray-900
+    leading-tight
+    text-5xl
+    sm:text-6xl
+    md:text-7xl
+    lg:text-8xl
+    xl:text-9xl
+  "
+>
               Mridula Goel
             </h1>
 
-            <p className="mt-10 text-xl leading-9 text-gray-600">
+            <p
+  className="
+    mt-8
+    max-w-2xl
+    mx-auto
+    text-base
+    md:text-lg
+    lg:text-xl
+    leading-8
+    text-gray-600
+  "
+>
               {slides[0].description}
             </p>
 
@@ -141,7 +189,14 @@ export default function HeroSlider() {
         {/* ---------------- WHAT I BRING ---------------- */}
 
         {currentSlide === 1 && (
-  <div className="w-full max-w-7xl animate-fade">
+  <div
+  className="
+    w-full
+    max-w-7xl
+    mx-auto
+    animate-fade
+  "
+>
 
     <p className="uppercase tracking-[0.35em] text-[#D63384] font-semibold text-center mb-4">
       
@@ -151,7 +206,15 @@ export default function HeroSlider() {
 
 </p>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div
+  className="
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-3
+    gap-6
+  "
+>
 
       {slides[1].cards?.map((card) => {
 
@@ -238,13 +301,28 @@ export default function HeroSlider() {
         {/* ---------------- BUSINESS IMPACT ---------------- */}
 
         {currentSlide === 2 && (
-          <div className="text-center max-w-4xl animate-fade">
+          <div
+  className="
+    text-center
+    max-w-4xl
+    mx-auto
+    animate-fade
+  "
+>
 
             <p className="uppercase tracking-[0.45em] text-[#D63384] font-semibold mb-6">
               {slides[2].subtitle}
             </p>
 
-            <h2 className="text-6xl font-bold text-[#222]">
+            <h2
+  className="
+    text-4xl
+    md:text-6xl
+    lg:text-7xl
+    font-bold
+    text-gray-900
+  "
+>
               {slides[2].title}
             </h2>
 
@@ -259,14 +337,17 @@ export default function HeroSlider() {
 
       {/* Navigation */}
 
-      <div
-        className="
-          absolute
-          bottom-6
+    <div
+  className="
+    absolute
+    bottom-8
+    md:bottom-10
           left-1/2
           -translate-x-1/2
           flex
-          gap-14
+          gap-5
+md:gap-10
+lg:gap-14
           z-30
         "
       >
@@ -280,7 +361,9 @@ export default function HeroSlider() {
 
             <span
               className={`
-                text-lg
+                text-sm
+md:text-base
+lg:text-lg
                 font-medium
                 transition-all
                 duration-300
