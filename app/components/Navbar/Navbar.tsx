@@ -1,4 +1,3 @@
-import Logo from "./Logo";
 import Link from "next/link";
 
 const navLinks = [
@@ -39,7 +38,6 @@ export default function Navbar() {
 "
       >
         {/* Logo */}
-        <Logo />
 
         {/* Navigation */}
         <div className="hidden md:flex items-center gap-10 ml-auto">
