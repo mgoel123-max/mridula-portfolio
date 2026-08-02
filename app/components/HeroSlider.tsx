@@ -113,62 +113,135 @@ export default function HeroSlider() {
       >
         {/* ---------------- HOME ---------------- */}
 
-        {currentSlide === 0 && (
-          <div
-            className="
-              text-center
-              max-w-5xl
-              mx-auto
-              animate-fade
-            "
-          >
-            <p
-              className="
-                uppercase
-                text-5xl
-                sm:text-6xl
-                md:text-7xl
-                lg:text-8xl
-                tracking-[0.35em]
-                font-semibold
-                text-[#D63384]
-                mb-4
-              "
-            >
-              {slides[0].subtitle}
-            </p>
+{currentSlide === 0 && (
+  <div
+    className="
+      w-full
+      max-w-6xl
+      mx-auto
+      grid
+      grid-cols-1
+      md:grid-cols-2
+      items-center
+      gap-10
+      md:gap-16
+      animate-fade
+    "
+  >
+    {/* Left: Picture */}
+    <div className="flex justify-center md:justify-end">
+      <img
+        src="/images/MG_image.jpeg"
+        alt="Mridula Goel"
+        className="
+          w-64
+          h-64
+          sm:w-80
+          sm:h-80
+          md:w-96
+          md:h-96
+          object-cover
+          rounded-3xl
+          shadow-xl
+          border
+          border-pink-100
+        "
+      />
+    </div>
 
-            <h1
-              className="
-                font-bold
-                tracking-tight
-                text-gray-900
-                leading-tight
-                text-5xl
-                sm:text-6xl
-                md:text-7xl
-                lg:text-8xl
-              "
-            >
-              Mridula Goel
-            </h1>
+    {/* Right: Name */}
+    <div className="text-center md:text-left">
+      <p
+        className="
+          uppercase
+          text-2xl
+          sm:text-3xl
+          md:text-4xl
+          tracking-[0.35em]
+          font-semibold
+          text-[#D63384]
+          mb-4
+        "
+      >
+        {slides[0].subtitle}
+      </p>
 
-            <p
-              className="
-                mt-6
-                max-w-2xl
-                mx-auto
-                text-base
-                md:text-lg
-                lg:text-xl
-                leading-8
-                text-gray-600
-              "
-            >
-              {slides[0].description}
-            </p>
-          </div>
-        )}
+      <h1
+        className="
+          font-bold
+          tracking-tight
+          text-gray-900
+          leading-tight
+          text-5xl
+          sm:text-6xl
+          md:text-6xl
+          lg:text-7xl
+        "
+      >
+        
+      </h1>
+      <h1
+  className="
+    font-bold
+    tracking-tight
+    text-gray-900
+    leading-tight
+    text-5xl
+    sm:text-6xl
+    md:text-6xl
+    lg:text-7xl
+  "
+>
+  Mridula Goel
+</h1>
+
+<p
+  className="
+    mt-4
+    text-lg
+    sm:text-xl
+    md:text-xl
+    font-medium
+    text-gray-500
+  "
+>
+  Program Management and Analytics professional with over nine years experience across India and USA
+</p>
+
+<p
+  className="
+    mt-6
+    max-w-xl
+    mx-auto
+    md:mx-0
+    text-base
+    md:text-lg
+    lg:text-xl
+    leading-8
+    text-gray-600
+  "
+>
+  {slides[0].description}
+</p>
+
+      <p
+        className="
+          mt-6
+          max-w-xl
+          mx-auto
+          md:mx-0
+          text-base
+          md:text-lg
+          lg:text-xl
+          leading-8
+          text-gray-600
+        "
+      >
+        {slides[0].description}
+      </p>
+    </div>
+  </div>
+)}
 
         {/* ---------------- WHAT I BRING ---------------- */}
 
