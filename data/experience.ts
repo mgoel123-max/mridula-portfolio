@@ -16,7 +16,7 @@ export const experiences = [
   {
     year: "2023–2024",
     company: "Kohl's + Sephora",
-    title: "Senior Marketing Analyst",
+    title: "Analytics Associate Manager",
 
     category: "Customer Growth • Beauty • Marketing Analytics",
 
@@ -31,7 +31,7 @@ export const experiences = [
   {
     year: "2022",
     company: "Kohl's + Sephora",
-    title: "Senior Marketing Analyst",
+    title: "Analytics Associate Manager",
 
     category: "Marketing Analytics • Program Management ",
 
