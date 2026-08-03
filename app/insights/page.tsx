@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Insights() {
   return (
@@ -35,36 +36,37 @@ export default function Insights() {
     </h2>
 
     <p className="mt-8 text-lg text-gray-600 leading-9">
-      Why does technology reshape consumer behaviour?
-      Why do economies influence innovation?
-      Why does culture affect marketing?
+      How does technology reshape consumer behaviour?
+      How does public policy influence innovation?
+      How does culture affect marketing?
     </p>
 
     <p className="mt-6 text-lg text-gray-600 leading-9">
       Through this blog, I explore the fascinating
       connections between business strategy,
-      marketing, economics, technology,
-      food, travel and everyday life.
+      marketing, economics, public policy, and technology.
+      I also write about food, travel and everyday life.
     </p>
-
-    <button
-      className="
-        mt-10
-        rounded-full
-        bg-[#D63384]
-        px-8
-        py-4
-        text-white
-        font-semibold
-        shadow-lg
-        transition-all
-        duration-300
-        hover:bg-[#B5175A]
-        hover:scale-105
-      "
-    >
-      Read Article →
-    </button>
+<Link
+  href="/insights/bengaluru-history"
+  className="
+    inline-flex
+    mt-10
+    rounded-full
+    bg-[#D63384]
+    px-8
+    py-4
+    text-white
+    font-semibold
+    shadow-lg
+    transition-all
+    duration-300
+    hover:bg-[#B5175A]
+    hover:scale-105
+  "
+>
+  Read Article →
+</Link>
 
   </div>
 
